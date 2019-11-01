@@ -12,52 +12,58 @@
   </head>
   <body>
     <main class="slider">
-      <section class="slider__item">
-        <div class="top-left-text"></div>
-        <div class="center-left-text"></div>
-        <div class="center-right-text"></div>
-      </section>
-      <nav class="navigation">
-        <div class="container-fluid flex-between">
+      <section class="fixed-containers" id="top-left-container"></section>
+      <section class="fixed-containers" id="center-left-container"></section>
+      <section class="fixed-containers" id="center-right-container"></section>
+      <section class="fixed-containers" id="bottom-left-container"></section>
+    </main>
+    <nav class="navigation">
+      <div class="container-fluid flex-between">
+        <div>
+          <!-- Using BEM(Block Element Modifier) -->
           <ul class="pagination">
-            <li onclick="renderLink(0)" class="pagination__item">
-              <a href="#" class="active"></a>
+            <li onclick="router(0)" class="pagination__item">
+              <span class="pagination__item--link active"></span>
             </li>
-            <li onclick="renderLink(1)" class="pagination__item">
-              <a href="#">1</a>
+            <li onclick="router(1)" class="pagination__item">
+              <span class="pagination__item--link">1</span>
             </li>
-            <li onclick="renderLink(2)" class="pagination__item">
-              <a href="#">2</a>
+            <li onclick="router(2)" class="pagination__item">
+              <span class="pagination__item--link">2</span>
             </li>
-            <li onclick="renderLink(3)" class="pagination__item">
-              <a href="#">3</a>
+            <li onclick="router(3)" class="pagination__item">
+              <span class="pagination__item--link">3</span>
             </li>
-            <li onclick="renderLink(4)" class="pagination__item">
-              <a href="#">4</a>
+            <li onclick="router(4)" class="pagination__item">
+              <span class="pagination__item--link">4</span>
             </li>
-            <li onclick="renderLink(5)" class="pagination__item">
-              <a href="#">5</a>
+            <li onclick="router(5)" class="pagination__item">
+              <span class="pagination__item--link">5</span>
             </li>
-            <li onclick="renderLink(6)" class="pagination__item">
-              <a href="#">6</a>
+            <li onclick="router(6)" class="pagination__item">
+              <span class="pagination__item--link">6</span>
             </li>
-            <li onclick="renderLink(7)" class="pagination__item">
-              <a href="#">7</a>
+            <li onclick="router(7)" class="pagination__item">
+              <span class="pagination__item--link">7</span>
             </li>
-            <li onclick="renderLink(8)" class="pagination__item">
-              <a href="#">8</a>
+            <li onclick="router(8)" class="pagination__item">
+              <span class="pagination__item--link">8</span>
             </li>
-            <li onclick="renderLink(9)" class="pagination__item">
-              <a href="#"></a>
+            <li onclick="router(9)" class="pagination__item">
+              <span class="pagination__item--link"></span>
             </li>
           </ul>
-          <tt class="mediamonks-title">
-            media <br />
-            monks
-          </tt>
+          <div class="pagination-guide"></div>
         </div>
-      </nav>
-    </main>
+
+        <tt class="mediamonks-title">
+          media <br />
+          monks
+        </tt>
+      </div>
+    </nav>
+    <script src="./js/constants.js"></script>
+    <script src="./js/HtmlNode.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

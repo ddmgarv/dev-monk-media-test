@@ -7,7 +7,7 @@
   padding: 0;
   height: 18px;
 }
-.pagination__item {
+.pagination .pagination__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,14 +17,14 @@
   font-size: 13px;
   cursor: pointer;
 }
-.pagination__item a {
+.pagination .pagination__item .pagination__item--link {
   color: #fff;
   text-decoration: none;
 }
-.pagination__item:last-child {
+.pagination .pagination__item:last-child {
   border-right: none;
 }
-.active {
+.pagination .pagination__item .active {
   width: 15px;
   height: 12px;
   background-color: #fff;
