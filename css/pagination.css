@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  border: 2px dotted white;
+  margin-left: 15px;
+  padding: 0;
+  height: 18px;
+}
+.pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: inherit;
+  border-right: 2px dotted white;
+  font-size: 13px;
+  cursor: pointer;
+}
+.pagination__item a {
+  color: #fff;
+  text-decoration: none;
+}
+.pagination__item:last-child {
+  border-right: none;
+}
+.active {
+  width: 15px;
+  height: 12px;
+  background-color: #fff;
+}

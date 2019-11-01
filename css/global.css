@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Klavika;
+  src: url(../font/klavika-bold-webfont.woff);
+  src: url(../font/klavika-light-webfont.woff);
+  src: url(../font/klavika-medium-webfont.woff);
+  src: url(../font/klavika-regular-webfont.woff);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Klavika;
+  overflow: hidden;
+}
+
+.container-fluid {
+  width: 100vw;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
