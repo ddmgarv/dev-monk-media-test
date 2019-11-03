@@ -1,9 +1,38 @@
 .slider {
-  width: 12226px;
   min-height: 100vh;
   background-image: url(../images/background.jpg);
   background-size: cover;
-  background-position: center;
+  transition: background-position-x 0.65s;
+}
+.slider-path-0 {
+  background-position-x: 0%;
+}
+.slider-path-1 {
+  background-position-x: 11.11%;
+}
+.slider-path-2 {
+  background-position-x: 22.22%;
+}
+.slider-path-3 {
+  background-position-x: 33.33%;
+}
+.slider-path-4 {
+  background-position-x: 44.44%;
+}
+.slider-path-5 {
+  background-position-x: 55.55%;
+}
+.slider-path-6 {
+  background-position-x: 66.66%;
+}
+.slider-path-7 {
+  background-position-x: 77.77%;
+}
+.slider-path-8 {
+  background-position-x: 88.88%;
+}
+.slider-path-9 {
+  background-position-x: 100%;
 }
 .title {
   padding: 0;
