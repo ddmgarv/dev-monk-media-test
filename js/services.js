@@ -8,9 +8,19 @@ const clearContainers = () => {
       containers.centerLeft_node.firstChild
     );
   }
+  while (containers.centerLeft_arrow.firstChild) {
+    containers.centerLeft_arrow.removeChild(
+      containers.centerLeft_arrow.firstChild
+    );
+  }
   while (containers.centerRight_node.firstChild) {
     containers.centerRight_node.removeChild(
       containers.centerRight_node.firstChild
+    );
+  }
+  while (containers.centerRight_arrow.firstChild) {
+    containers.centerRight_arrow.removeChild(
+      containers.centerRight_arrow.firstChild
     );
   }
   while (containers.bottomLeft_node.firstChild) {
@@ -33,6 +43,7 @@ const changeLinkToActive = index => {
 };
 
 moveScrollXTo = index => {
+  // Here i just use string interpolation for some izi pizi node change-of-class
   document.getElementsByClassName(
     "slider"
   )[0].className = `slider slider-path-${index}`;
