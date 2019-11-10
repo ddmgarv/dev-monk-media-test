@@ -2,7 +2,7 @@
   min-height: 100vh;
   background-image: url(../images/background.jpg);
   background-size: cover;
-  transition: background-position-x 0.65s;
+  transition: background-position-x 1s;
 }
 .slider-path-0 {
   background-position-x: 0%;
